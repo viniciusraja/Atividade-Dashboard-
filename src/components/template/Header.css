@@ -1,4 +1,38 @@
 header{
     background-color: #FFF;
     border-bottom: 0.5px solid #DDD;
+    align-items: center;
+    padding-right: 30px;
+}
+
+.menuButton{
+    width:var(--aside-width);
+    height:var(--header-height);
+    background-color: #A4A4A4;
+    align-items: center;
+    justify-content: center;
+    box-shadow: inset 2px 2px 4px #b0b0b0, inset -1px -1px 2px #ffffff;
+    
+}
+span{
+    margin:0;
+    padding:0;
+}
+
+span h4{
+    font-size:1.1em;
+    margin:0;
+    color:#666;
+}
+span p{
+    font-size:0.8em;
+    margin:0;
+    color:#DDD;
+}
+
+div.iconUser{
+    height:40px;
+    width:40px;
+    border: 1.5px solid #DDD;
+    border-radius: 30px;
 }

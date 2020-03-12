@@ -1,0 +1,12 @@
+div.doughnutChartContainer{
+    border: 1px solid #888;
+    width:400px;
+    background-color: #FFF;
+    border-radius: 10px;
+
+}
+div h4.doughnutTitle{
+    font-size: 1.2em;
+    border-bottom:1px solid #888;
+    width:200px;
+}
