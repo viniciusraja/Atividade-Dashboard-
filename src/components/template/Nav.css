@@ -1,0 +1,32 @@
+aside.menu-area {
+  background-color: #fff;
+}
+
+nav.menu {
+  height: 80%;
+}
+
+nav.menu a {
+  display: block;
+  text-decoration: none;
+  color: #999;
+}
+nav a:hover {
+  display: block;
+  text-decoration: none;
+  color: #ccc;
+}
+nav div.navButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+  margin: 4px;
+  border-radius: 10px;
+  box-shadow:  1px 1px 3px #b0b0b0,  -3px -3px 4px #ffffff;
+
+}
+nav div.navButton:active {
+  box-shadow: inset 1px 1px 2px #b0b0b0, inset -1px -1px 2px #ffffff;
+}
