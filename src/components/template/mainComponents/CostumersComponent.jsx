@@ -1,9 +1,9 @@
-import './DoughnutChart.css'
+import './CostumersComponent.css'
 
 import React, {Component} from 'react';
 import {Chart} from 'primereact/chart';
 
-export default class DoughnutChart extends Component {
+export default class CostumersComponent extends Component {
 
     render() {
 
@@ -51,7 +51,7 @@ export default class DoughnutChart extends Component {
             };
 
         return (
-            <div className="doughnutChartContainer ">
+            <div className="CostumersComponentContainer ">
                 <div className=" d-flex flex-column justify-content-center align-items-center">
 
                 <div className="d-flex col-12 p-0 " >
