@@ -2,11 +2,19 @@ div.doughnutChartContainer{
     border: 1px solid #888;
     background-color: #FFF;
     border-radius: 10px;
-    width:325px;
-
+    width:400px;
+    overflow: hidden;
+    padding-top: 10px;
 }
 div h4.doughnutTitle{
     font-size: var(--font-size-title);
     border-bottom:1px solid #888;
     width:200px;
+    padding-left:20px ;
+}
+.doughnutChartContainer canvas.chartjs-render-monitor{
+    display:block;
+      
+    height:500px;
+    width:600px;
 }

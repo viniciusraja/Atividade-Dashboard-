@@ -16,7 +16,8 @@ export default class AreaChart extends Component {
                     label:'Laptops',
                     data: [10, 30, 5, 40, 50, 20,60,20,40,50,60,50],
                     fill: true,
-                    borderColor: '#42A5F5'
+                    borderColor: '#42A5F5',
+                    borderRadius:'10px'
                 },
                 {
                     label:'Headsets',
@@ -75,7 +76,7 @@ export default class AreaChart extends Component {
                 </div>
 
                 <div className="content-section implementation">
-                    <Chart type="line" data={lineStylesData} options={chartOptions} />
+                    <Chart type="line" data={lineStylesData} options={chartOptions} style={{width:'880px'}}/>
                 </div>
             </div>
         )

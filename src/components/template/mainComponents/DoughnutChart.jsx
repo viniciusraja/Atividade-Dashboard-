@@ -10,10 +10,11 @@ export default class DoughnutChart extends Component {
         
         const data = {
          options:{
-                
                 legend: {
                     position: 'top',
+                    
                 },
+                responsive: true,
             },
             
             labels: ['Electronics','Furniture','Toys'],
@@ -39,15 +40,16 @@ export default class DoughnutChart extends Component {
             };
 
         return (
-            <div className="doughnutChartContainer p-1">
-                <div className="content-section introduction" >
-                    <div className="feature-intro">
+            <div className="doughnutChartContainer ">
+                <div className=" d-flex flex-column justify-content-center align-items-center">
+
+                <div className="d-flex col-12 p-0 " >
                         <h4 className="doughnutTitle">TOP CATEGORIES</h4>
-                    </div>
                 </div>
 
-                <div className="content-section implementation">
-                    <Chart type="doughnut" data={data}  options={data.options}/>
+                <div className="d-flex  content-section implementation pt-5 ">
+                    <Chart type="doughnut" data={data}  options={data.options} style={{width:550}}/>
+                </div>
                 </div>
 
             </div>

@@ -1,5 +1,7 @@
+
 div.totalCard{
     height:80px;
+    width:400px;
     background-color: #FFF;
     border: 0.5px solid #888;
     border-radius: 30px;
@@ -8,10 +10,12 @@ div.totalCard{
     
 }
 h1.totalTitle{
-    width:30px;
+    width:150px;
     font-size: var(--font-size-title);
 }
-div icon{
-    font-size:25px;
+div.totalIcon{
+    display:flex;
+    align-items: center;
+    font-size:30px;
 
 }
