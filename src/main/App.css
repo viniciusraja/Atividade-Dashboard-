@@ -4,6 +4,8 @@
  --header-height:65px;
  --aside-width:60px;
  --footer-height:35px;
+ --font-size-title:1.15em;
+ --font-size-subtitle:0.8em;
 
  --shadow:
     0 2px 23px 0 rgba(0,0,0,0.1),
@@ -14,6 +16,8 @@
 *{
     box-sizing: border-box;
     font-family: 'monospace','Verdana', 'Tahoma', sans-serif ;
+    margin:0;
+    padding:0;
 }
 
 .app{

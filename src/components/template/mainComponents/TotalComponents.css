@@ -1,0 +1,17 @@
+div.totalCard{
+    height:80px;
+    background-color: #FFF;
+    border: 0.5px solid #888;
+    border-radius: 30px;
+    padding:0 30px;
+    
+    
+}
+h1.totalTitle{
+    width:30px;
+    font-size: var(--font-size-title);
+}
+div icon{
+    font-size:25px;
+
+}

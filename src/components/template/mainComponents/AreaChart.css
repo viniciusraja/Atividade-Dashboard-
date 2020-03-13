@@ -2,5 +2,12 @@ div.areaChartContainer{
     border: 1px solid #888;
     background-color: #FFF;
     border-radius: 10px;
+    
+}
 
+div h4.areaChartTitle{
+    font-size: var(--font-size-title);
+    border-bottom:1px solid #888;
+    width:500px;
+    padding-left: 20px;
 }
