@@ -1,19 +1,24 @@
 aside.menu-area {
-  background-color: #fff;
-  padding-top: 3px;
-  border-right: 1px solid #d5d5d5;
+  position:fixed;
+  top:0;
+  left:0;
+  flex-direction: column;
 }
 
 nav.menu {
   height: 700px;
+  width:var(--aside-width)
   
 }
 
 nav.menu a {
   display: block;
+  position:relative;
+
   text-decoration: none;
   color: #999;
 }
+
 nav a:hover {
   display: block;
   text-decoration: none;
@@ -29,14 +34,38 @@ nav div.navButton {
   justify-content: center;
   height: 60px;
   width: 60px;
-  margin-left: 20px;
+  margin-left: 10px;
   margin-top: 15px;
   border-radius: 40px;
   box-shadow:  2px 2px 3px #b0b0b0,  -3px -3px 4px #ffffff;
-  z-index:5
 
 }
 nav div.navButton:active {
   box-shadow: inset 1px 1px 2px #b0b0b0, inset -1px -1px 2px #ffffff;
 
+}
+aside div.menuButton{
+  border-right:1px solid #888;
+
+  width:var(--aside-width);
+  height:var(--header-height);
+  box-shadow: inset 2px 1px 4px #b0b0b0, inset -1px -2px 4px #ffffff;
+
+  
+}
+aside div.menuButton:hover{
+  width:var(--aside-width);
+  cursor:pointer
+}
+
+div.backgroundNav{
+  display: block;
+  position: absolute;
+  width:50px;
+  height:700px;
+  border-right:1px solid #888;
+  background-color: #FFF;
+  box-shadow:  2px 2px 3px #b0b0b0,  -3px -3px 4px #ffffff;
+
+  
 }

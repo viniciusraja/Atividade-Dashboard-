@@ -5,6 +5,7 @@ div.areaChartContainer{
     width:880px;
     padding-top: 10px;
     z-index: 5;
+    box-shadow: -3px 3px 4px #b0b0b0, 3px -3px 4px #ffffff
 
 }
 
