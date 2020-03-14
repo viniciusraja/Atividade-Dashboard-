@@ -17,68 +17,68 @@ export default props =>
 
        <nav className="menu d-flex flex-column justify-content-around ">
         
-        <div className="navButton">
         <a href="#/" className="menuItems">
-            <MdSearch className="icon" size="20px"/>
+        <div className="navButton">
+            <MdSearch className="icon" size="23px"/>
             
-        </a>
         </div>
+        </a>
         
-        <div className="navButton">
         <a href="#/" className="menuItems">
-            <GiHouse className="icon" size="20px"/>
+        <div className="navButton">
+            <GiHouse className="icon" size="23px"/>
 
-        </a>
         </div>
+        </a>
         
-        <div className="navButton">
         <a href="#/" className="menuItems">
-            <AiFillProject className="icon" size="20px"/>
+        <div className="navButton">
+            <AiFillProject className="icon" size="23px"/>
 
-        </a>
         </div>
+        </a>
         
-        <div className="navButton">
         <a href="#/" className="menuItems">
-            <AiOutlineAreaChart className="icon" size="20px"/>
+        <div className="navButton">
+            <AiOutlineAreaChart className="icon" size="23px"/>
 
-        </a>
         </div>
+        </a>
         
-        <div className="navButton">
         <a href="#/" className="menuItems">
-            <TiUpload className="icon" size="20px"/>
+        <div className="navButton">
+            <TiUpload className="icon" size="23px"/>
 
-        </a>
         </div>
+        </a>
         
-        <div className="navButton">
         <a href="#/" className="menuItems">
-            <FaFileImage className="icon" size="20px"/>
+        <div className="navButton">
+            <FaFileImage className="icon" size="23px"/>
 
-        </a>
         </div>
+        </a>
         
-        <div className="navButton">
         <a href="#/" className="menuItems">
-            <IoIosCalendar className="icon" size="20px"/>
+        <div className="navButton">
+            <IoIosCalendar className="icon" size="23px"/>
 
-        </a>
         </div>
+        </a>
         
-        <div className="navButton">
         <a href="#/" className="menuItems">
-            <MdGroup className="icon" size="20px"/>
+        <div className="navButton">
+            <MdGroup className="icon" size="23px"/>
 
-        </a>
         </div>
+        </a>
         
-        <div className="navButton">
         <a href="#/" className="menuItems">
-            <AiFillSetting className="icon" size="20px"/>
+        <div className="navButton">
+            <AiFillSetting className="icon" size="23px"/>
 
-        </a>
         </div>
+        </a>
     
         </nav> 
     </aside>

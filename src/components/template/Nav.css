@@ -1,10 +1,12 @@
 aside.menu-area {
   background-color: #fff;
   padding-top: 3px;
+  border-right: 1px solid #d5d5d5;
 }
 
 nav.menu {
-  height: 80%;
+  height: 700px;
+  
 }
 
 nav.menu a {
@@ -15,19 +17,26 @@ nav.menu a {
 nav a:hover {
   display: block;
   text-decoration: none;
-  color: #ccc;
+  color: #6633fa;
+}
+nav a:active {
+  color: #eebb2c;
 }
 nav div.navButton {
+  background-color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 35px;
-  width: 35px;
-  margin: 4px;
-  border-radius: 10px;
-  box-shadow:  1px 1px 3px #b0b0b0,  -3px -3px 4px #ffffff;
+  height: 60px;
+  width: 60px;
+  margin-left: 20px;
+  margin-top: 15px;
+  border-radius: 40px;
+  box-shadow:  2px 2px 3px #b0b0b0,  -3px -3px 4px #ffffff;
+  z-index:5
 
 }
 nav div.navButton:active {
   box-shadow: inset 1px 1px 2px #b0b0b0, inset -1px -1px 2px #ffffff;
+
 }

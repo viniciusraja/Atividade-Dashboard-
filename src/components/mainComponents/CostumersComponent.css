@@ -15,12 +15,13 @@ div.buttonItem{
     display:flex;
     height:25px;
     width:90px;
+    background-color:#fff;
     border-radius: 10px;
-    border: 0.5px solid #DDD;
+    border: 0.5px solid #f8f8f8;
     justify-content: center;
     align-items: center;
     user-select:none;
-    box-shadow:  2px 2px 5px #b0b0b0,  -5px -5px 6px #ffffff;
+    box-shadow:  2px 2px 4px #b0b0b0,  -3px -3px 10px #ffffff;
 }
 div.buttonItem:active{
     box-shadow: inset 1px 1px 2px #b0b0b0, inset -1px -1px 2px #ffffff;
@@ -29,6 +30,7 @@ div.buttonItem:active{
 div.buttonItem h2{
     font-size: var(--font-size-subtitle);
     margin:0;
+    z-index: 10;
     
 }
 
@@ -59,7 +61,29 @@ div.dropDownDetails{
     border-bottom-right-radius: 30px;
 }
 
-.MuiTableRow-root:hover{
-    background-color:#6633fa
+.MuiTableRow-root.color1Row:hover{
+    background: rgb(225,105,106);
+    background: linear-gradient(90deg, rgba(225,105,106,1) 18%, rgba(255,255,255,1) 100%)
+}
+.MuiTableRow-root.color1Row{
+    background: rgb(225,105,106);
+    background: linear-gradient(90deg, rgba(225,105,106,1) 18%, rgba(255,255,255,1) 100%)
+}
+.MuiTableRow-root.color1Row:hover{
+    cursor:pointer;
+    background: rgb(225,105,106);
+    background: linear-gradient(90deg, rgba(225,105,106,1) 0%, rgba(238,187,44,1) 31%, rgba(225,105,106,1) 100%);
+}
+
+
+.MuiTableRow-root.color2Row{
+    background-color: rgb(238,187,44);
+background: linear-gradient(90deg, rgba(238,187,44,1) 18%, rgba(255,255,255,1) 100%);
+
+}
+.MuiTableRow-root.color2Row:hover{
+    background-color: rgb(238, 132, 45);
+    background: linear-gradient(90deg, rgba(238,187,44,1) 1%, rgba(225,105,106,1) 31%, rgba(238,187,44,1) 100%);
+    cursor:pointer
 }
 

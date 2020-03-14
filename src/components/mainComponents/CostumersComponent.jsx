@@ -22,14 +22,14 @@ class ExpandingRow extends React.Component {
   
       return (
         <>
-          <TableRow className="w-100" key={row.id} style ={row.id % 2?
+          <TableRow className="w-100 " className={row.id % 2?"color1Row":"color2Row"} key={row.id} style ={row.id % 2?
            { boxShadow:" 4px 4px 4px #b0b0b0,  -4px -4px 4px #ffffff", borderRadius:30,backgroundColor:"#F9F9F9", padding:0}:
            { boxShadow: " -3px 3px 4px #b0b0b0, 3px -3px 4px #ffffff",borderRadius:30, padding:0 }}>
             
-            <TableCell style ={{width:"20%"}}  className="p-0 pl-4 border-bottom-0 firstCell" ><p className="font-weight-bold m-0 ">{row.name}</p></TableCell>
-            <TableCell style ={{minWidth:100,width:"20%"}} className="p-0 border-bottom-0 d-none d-lg">{row.joinDate}<p className="text-muted m-0">Joined</p></TableCell>
-            <TableCell style ={{width:"20%"}} className="p-0 border-bottom-0 "><p>{row.phone}</p><p className="text-muted m-0">Phone-Number</p></TableCell>
-            <TableCell style ={{width:"20%"}} className="p-0 border-bottom-0 d-none d-md-flex ">{row.adress}<p className="text-muted m-0">Location</p></TableCell>
+            <TableCell style ={{width:"20%"}}  className="p-0 pl-4 border-bottom-0 firstCell" ><p className="text-white font-weight-bold m-0 ">{row.name}</p></TableCell>
+            <TableCell style ={{width:"20%"}} className="p-0 border-bottom-0"><p className="text-white  m-0 ">{row.joinDate}</p><p className="text-white text-muted m-0">Joined</p></TableCell>
+            <TableCell style ={{width:"20%"}} className="p-0 border-bottom-0 "><p className="text-white  m-0" >{row.phone}</p><p className="text-white text-muted m-0">Phone-Number</p></TableCell>
+            <TableCell style ={{width:"20%"}} className="p-0 border-bottom-0 "><p className="text-white  m-0 ">{row.adress}</p><p className="text-white text-muted m-0">Location</p></TableCell>
             <TableCell style ={{width:"20%"}} align="right" className="p-0 pr-5 border-bottom-0  lastCell ">
             <div className="buttons d-flex w-100">
               <div className="buttonItem buttonOptions">
@@ -65,12 +65,7 @@ class ExpandingRow extends React.Component {
     table: {
       minWidth: 450
     },
-    tableRow: {
-          borderBottom: "none",
-    },
-    tableCell: {
-          borderBottom: "none",
-    }
+  
 });
   
   let id = 0;
