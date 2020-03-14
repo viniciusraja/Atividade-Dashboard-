@@ -8,7 +8,7 @@ import { FiMonitor } from "react-icons/fi";
 export default props =>
 
     <div className="totalComponent row col-12 justify-content-between  mb-5 p-0">
-            <div className=" totalCard d-flex  justify-content-center p-0">
+            <div className=" totalCard d-flex  justify-content-center mt-5 p-0">
                <div className="  d-flex col-md-8 p-0 col-12  align-items-center justify-content-between ">
                 <span >
                   <h1 className="totalTitle">TOTAL SALES</h1>
@@ -17,7 +17,7 @@ export default props =>
                <div className="totalIcon"><FaStore /></div>
                </div> 
             </div>
-            <div className="totalCard  d-flex  justify-content-center p-0">
+            <div className="totalCard  d-flex  justify-content-center mt-5 p-0">
               <div className="  d-flex  col-md-8 p-0 col-12 align-items-center justify-content-between">
                 <span >
                   <h1 className="totalTitle">TOTAL INCOME</h1>
@@ -26,7 +26,7 @@ export default props =>
                 <div className="totalIcon"><GoTag /></div>
               </div> 
             </div>
-            <div className="totalCard  d-flex justify-content-center p-0">
+            <div className="totalCard  d-flex justify-content-center mt-5 p-0">
               <div className="  d-flex  col-md-8 p-0 col-12 align-items-center justify-content-between">
                 <span >
                   <h1 className="totalTitle">TOTAL SALES</h1>
