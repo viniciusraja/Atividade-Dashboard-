@@ -1,7 +1,7 @@
 import './AreaChart.css'
 
 import React, {Component} from 'react';
-import {Chart} from 'primereact/chart';
+import {Chart} from '../../../node_modules/primereact/chart';
 
 export default class AreaChart extends Component {
 

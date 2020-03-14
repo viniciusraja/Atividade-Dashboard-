@@ -1,8 +1,9 @@
 import React from 'react';
 
-import DoughnutChart from './mainComponents/DoughnutChart' 
-import AreaChart from './mainComponents/AreaChart' 
-import TotalComponents from './mainComponents/TotalComponents' 
+import TotalComponents from '../mainComponents/TotalComponents' 
+import AreaChart from '../mainComponents/AreaChart' 
+import DoughnutChart from '../mainComponents/DoughnutChart' 
+import CostumersComponent from '../mainComponents/CostumersComponent' 
 import './Main.css';
 
 
@@ -22,6 +23,9 @@ export default props =>
               <div className=" d-flex justify-content-end col-4  p-0">
               <DoughnutChart/>
               </div>
+        </div>
+        <div className="CostumersContainer row col-12 p-0 mt-5">
+              <CostumersComponent/>
         </div>
        </div>
     </main>        
