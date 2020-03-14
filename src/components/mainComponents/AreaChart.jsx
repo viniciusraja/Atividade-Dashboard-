@@ -76,7 +76,7 @@ export default class AreaChart extends Component {
                 </div>
 
                 <div className="content-section implementation">
-                    <Chart type="line" data={lineStylesData} options={chartOptions} style={{width:'880px'}}/>
+                    <Chart type="line" data={lineStylesData} options={chartOptions} style={{width:'1058px'}}/>
                 </div>
             </div>
         )

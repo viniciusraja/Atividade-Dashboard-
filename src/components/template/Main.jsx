@@ -15,7 +15,7 @@ export default props =>
        <div className=" row p-0 m-0  ">
         <TotalComponents className="col-12"/>
        </div>
-        <div className="charts row justify-content-around p-0 m-0">
+        <div className="charts row justify-content-between p-0 m-0">
               
               <AreaChart className="col-md-8" />
               

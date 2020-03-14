@@ -51,7 +51,7 @@ export default class DoughnutChart extends Component {
             };
 
         return (
-            <div className="doughnutChartContainer ">
+            <div className="doughnutChartContainer mb-5 ">
                 <div className=" d-flex flex-column justify-content-center align-items-center">
 
                 <div className="d-flex col-12 p-0 " >

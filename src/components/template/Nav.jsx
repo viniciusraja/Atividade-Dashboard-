@@ -36,17 +36,17 @@ export default class Nav extends React.Component {
 
     <aside className="menu-area d-flex align-items-center justify-content-start">
          <div 
-        /* style={this.state.open?{backgroundColor:"#eebb2c"}:{backgroundColor:"#6633fa"}} */
-        className="menuButton m-0 p-0 d-flex justify-content-center align-items-center"
-         onClick={this.handleClick.bind(this)}
-         >
+        
+        className={this.state.open?"active menuButton m-0 p-0 d-flex justify-content-center align-items-center":"menuButton m-0 p-0 d-flex justify-content-center align-items-center "}
+        onClick={this.handleClick.bind(this)}
+        >
        <HamburgerButton
         open={this.state.open}
         
-        width={30}
-        height={30}
-        strokeWidth={3}
-        color={this.state.open?"#e1696a":"#6633fa"}
+        width={25}
+        height={25}
+        strokeWidth={2.5}
+        color={this.state.open?"#e1696a":"#999"}
         animationDuration={0.5}
       />
        </div>

@@ -7,7 +7,6 @@ import Collapse from "@material-ui/core/Collapse";
 import Table from "@material-ui/core/Table";
 import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
-import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
 import { AiOutlineSetting } from "react-icons/ai";
 
@@ -22,20 +21,18 @@ class ExpandingRow extends React.Component {
   
       return (
         <>
-          <TableRow className="w-100 " className={row.id % 2?"color1Row":"color2Row"} key={row.id} style ={row.id % 2?
-           { boxShadow:" 4px 4px 4px #b0b0b0,  -4px -4px 4px #ffffff", borderRadius:30,backgroundColor:"#F9F9F9", padding:0}:
-           { boxShadow: " -3px 3px 4px #b0b0b0, 3px -3px 4px #ffffff",borderRadius:30, padding:0 }}>
+          <TableRow className="w-100 " className={row.id % 2?"oddRow":"evenRow"} key={row.id}> 
             
-            <TableCell style ={{width:"20%"}}  className="p-0 pl-4 border-bottom-0 firstCell" ><p className="text-white font-weight-bold m-0 ">{row.name}</p></TableCell>
-            <TableCell style ={{width:"20%"}} className="p-0 border-bottom-0"><p className="text-white  m-0 ">{row.joinDate}</p><p className="text-white text-muted m-0">Joined</p></TableCell>
-            <TableCell style ={{width:"20%"}} className="p-0 border-bottom-0 "><p className="text-white  m-0" >{row.phone}</p><p className="text-white text-muted m-0">Phone-Number</p></TableCell>
-            <TableCell style ={{width:"20%"}} className="p-0 border-bottom-0 "><p className="text-white  m-0 ">{row.adress}</p><p className="text-white text-muted m-0">Location</p></TableCell>
-            <TableCell style ={{width:"20%"}} align="right" className="p-0 pr-5 border-bottom-0  lastCell ">
-            <div className="buttons d-flex w-100">
+            <TableCell style ={{width:"20%"}}  className="p-0 pl-4 border-bottom-0 firstCell" ><p className=" font-weight-bold m-0 ">{row.name}</p></TableCell>
+            <TableCell style ={{width:"20%"}} className="p-0 border-bottom-0 joinDate"><p className="  m-0 ">{row.joinDate}</p><p className=" text-muted m-0">Joined</p></TableCell>
+            <TableCell style ={{width:"20%"}} className="p-0 border-bottom-0 "><p className="  m-0" >{row.phone}</p><p className=" text-muted m-0">Phone-Number</p></TableCell>
+            <TableCell style ={{width:"20%"}} className="p-0 border-bottom-0 location"><p className="  m-0 ">{row.adress}</p><p className=" text-muted m-0">Location</p></TableCell>
+            <TableCell style ={{width:"20%"}} align="right" className="pr-md-5 p-0 border-bottom-0  lastCell ">
+            <div className="buttons  flex-md-row flex-column  w-100">
               <div className="buttonItem buttonOptions">
                <h2>Options</h2> 
               </div>
-              <div className="buttonItem buttonDetails"
+              <div className="buttonItem m-1 buttonDetails"
                 onClick={() => this.setState(({ open }) => ({ open: !open }))}
               >
                <h2>Details</h2> 
@@ -88,8 +85,10 @@ class ExpandingRow extends React.Component {
     return (
         <>
         <div className="costumersHeader row col-12">
-            RECENT COSTUMERS <span className="settingsIcon">
-                <AiOutlineSetting size={35}/></span>
+            RECENT COSTUMERS 
+            <div className="settingsButton">
+                <AiOutlineSetting size={35}/>
+             </div>
         </div>
         <Table className={classes.table}>
           <TableBody> 

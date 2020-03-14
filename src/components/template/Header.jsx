@@ -1,7 +1,6 @@
 import './Header.css';
 import React from 'react';
 
-import { FiMenu } from "react-icons/fi";
 import { FaImage } from "react-icons/fa";
 import { FaUserAlt } from "react-icons/fa";
 

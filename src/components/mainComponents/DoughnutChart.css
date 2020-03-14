@@ -5,7 +5,7 @@ div.doughnutChartContainer{
     width:400px;
     overflow: hidden;
     padding-top: 10px;
-    box-shadow: -3px 3px 4px #b0b0b0, 3px -3px 4px #ffffff
+    box-shadow: var(--shadow)
 }
 div h4.doughnutTitle{
     font-size: var(--font-size-title);

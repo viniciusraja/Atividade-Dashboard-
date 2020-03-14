@@ -2,11 +2,9 @@ div.areaChartContainer{
     border: 1px solid #888;
     background-color: #FFF;
     border-radius: 10px;
-    width:880px;
+    width:1060px;
     padding-top: 10px;
-    z-index: 5;
-    box-shadow: -3px 3px 4px #b0b0b0, 3px -3px 4px #ffffff
-
+    box-shadow: var(--shadow);
 }
 
 div h4.areaChartTitle{

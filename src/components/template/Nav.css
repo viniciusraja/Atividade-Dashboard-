@@ -38,7 +38,6 @@ nav div.navButton {
   margin-top: 15px;
   border-radius: 40px;
   box-shadow:  2px 2px 3px #b0b0b0,  -3px -3px 4px #ffffff;
-
 }
 nav div.navButton:active {
   box-shadow: inset 1px 1px 2px #b0b0b0, inset -1px -1px 2px #ffffff;
@@ -49,14 +48,19 @@ aside div.menuButton{
 
   width:var(--aside-width);
   height:var(--header-height);
-  box-shadow: inset 2px 1px 4px #b0b0b0, inset -1px -2px 4px #ffffff;
-
+  border-bottom-right-radius: 30px;
+  border-top-right-radius: 30px;
+  box-shadow:  inset 2px 1px 3px #b0b0b0, 1px 2px 5px #b0b0b0;
+  
   
 }
 aside div.menuButton:hover{
-  width:var(--aside-width);
-  cursor:pointer
+  cursor:pointer;
 }
+aside div.menuButton.active{
+  box-shadow: inset 1px 1px 5px #888, inset -1px -1px 3px #ccc;
+}
+
 
 div.backgroundNav{
   display: block;
