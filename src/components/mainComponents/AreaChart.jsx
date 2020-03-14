@@ -68,7 +68,7 @@ export default class AreaChart extends Component {
 
 
         return (
-            <div className="areaChartContainer">
+            <div className="areaChartContainer d-none d-lg-block mb-5" >
                 <div className="content-section introduction">
                     <div className="feature-intro">
                         <h4 className="areaChartTitle">SALES PERFORMANCE</h4>

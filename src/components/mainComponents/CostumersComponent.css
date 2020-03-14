@@ -1,3 +1,9 @@
+div.costumersHeader{
+    
+    justify-content: space-between;
+    align-items: center;
+    font-size: var(--font-size-title);
+}
 div.buttons{
     display:flex;
     justify-content: space-evenly;
@@ -33,7 +39,7 @@ div.dropDownDetails{
     text-align: center;
     padding: 0 10px;
     margin:4px;
-    height:70px;
+    height:"100%";
     width:"100%";
     background-color: #FFF;
     border: 0.5px solid #DDD;
@@ -41,5 +47,19 @@ div.dropDownDetails{
     font-size: var(--font-size-subtitle);
     box-shadow: inset 1px 1px 2px #b0b0b0, inset -1px -1px 2px #ffffff;
     z-index:5;
+}
+
+.MuiTableCell-root.MuiTableCell-body.firstCell{
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border: 3 solid #b0b0b0;
+}
+.MuiTableCell-root.MuiTableCell-body.lastCell{
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.MuiTableRow-root:hover{
+    background-color:#6633fa
 }
 

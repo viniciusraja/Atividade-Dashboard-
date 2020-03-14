@@ -11,23 +11,21 @@ import './Main.css';
 export default props =>
     <>
     <main className="content container-fluid p-sm-5 p-0">
-       <div className="row col-12 p-0 m-0">
 
-       <div className="d-flex row col-12 justify-content-center p-0">
-        <TotalComponents />
+       <div className=" row p-0 m-0  ">
+        <TotalComponents className="col-12"/>
        </div>
-        <div className="charts row col-12 d-flex justify-content-between p-0">
-              <div className="col-8 p-0">
-              <AreaChart />
-              </div>
-              <div className=" d-flex justify-content-end col-4  p-0">
-              <DoughnutChart/>
-              </div>
+        <div className="charts row justify-content-around p-0 m-0">
+              
+              <AreaChart className="col-md-8" />
+              
+              
+              <DoughnutChart className=" justify-content-end col-md-3"/>
+              
         </div>
-        <div className="CostumersContainer row col-12 p-0 mt-5">
-              <CostumersComponent/>
+        <div className="CostumersContainer row p-0 m-0 mt-5">
+              <CostumersComponent className="col-12"/>
         </div>
-       </div>
     </main>        
     </>
 
