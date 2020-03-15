@@ -1,7 +1,7 @@
 :root {
  --bg-light:#FFF;
  --header-height:65px;
- --aside-width:70px;
+ --aside-width:60px;
  --footer-height:35px;
  --font-size-title:1.15em;
  --font-size-subtitle:0.8em;
@@ -53,4 +53,19 @@ main.content{
 
 footer.footer{
     grid-area:footer;
+}
+
+@media(max-width:576px){
+    .app{
+        grid-template-rows:
+            var(--header-height)
+            1fr
+            var(--footer-height);
+        grid-template-columns: 15px 1fr;
+        grid-template-areas: 
+            "menu content"
+            "content content"
+            "footer footer"
+        ;
+    }
 }

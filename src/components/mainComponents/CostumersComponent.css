@@ -121,7 +121,7 @@ box-shadow: 1px 1px 7px rgba(56,161,177,1) , 1px -1px 6px rgba(136,243,229,1);
 
 
 @media(max-width:768px){
-    
+  
     .detailsContainer{
         width:340px;
     }

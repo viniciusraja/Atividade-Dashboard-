@@ -10,7 +10,7 @@ import './Main.css';
 
 export default props =>
     <>
-    <main className="content container-fluid p-sm-5 p-0">
+    <main className="content container-fluid  p-sm-5 p-0">
 
        <div className=" row p-0 m-0  ">
         <TotalComponents className="col-12"/>

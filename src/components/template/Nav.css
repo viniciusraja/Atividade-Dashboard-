@@ -59,7 +59,7 @@ nav div.navButton:active {
 }
 aside div.menuButton{
   border-right:1px solid #888;
-
+  background-color: #FFF;
   width:45px;
   height:var(--header-height);
   border-bottom-right-radius: 30px;
