@@ -3,6 +3,7 @@ import './AreaChart.css'
 import React, {Component} from 'react';
 import {Chart} from '../../../node_modules/primereact/chart';
 
+import { AiOutlineSetting } from "react-icons/ai";
 export default class AreaChart extends Component {
 
     constructor(props) {
@@ -82,8 +83,9 @@ export default class AreaChart extends Component {
         return (
             <div className="areaChartContainer d-none d-lg-block mb-5" >
                 <div className="content-section introduction">
-                    <div className="feature-intro">
-                        <h4 className="areaChartTitle">SALES PERFORMANCE</h4>
+                    <div className="feature-intro d-flex justify-content-between align-items-start">
+                        <h4 className="areaChartTitle mb-3">SALES PERFORMANCE</h4>
+                        <div className="settingsButton"><AiOutlineSetting  size={35}/></div>
                     </div>
                 </div>
 

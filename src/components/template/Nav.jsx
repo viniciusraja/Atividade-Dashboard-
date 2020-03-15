@@ -8,7 +8,7 @@ import { TiUpload } from "react-icons/ti";
 import { FaFileImage } from "react-icons/fa";
 import { IoIosCalendar } from "react-icons/io";
 import { MdGroup } from "react-icons/md";
-import { AiFillSetting } from "react-icons/ai";
+import { AiOutlineSetting } from "react-icons/ai";
 
 
 import { SlideDown } from "react-slidedown";
@@ -114,7 +114,7 @@ export default class Nav extends React.Component {
         
         <a href="#/" className="menuItems">
         <div className="navButton">
-            <AiFillSetting className="icon" size="23px"/>
+            <AiOutlineSetting className="icon" size="23px"/>
             <span>Settings</span>
         </div>
         </a>

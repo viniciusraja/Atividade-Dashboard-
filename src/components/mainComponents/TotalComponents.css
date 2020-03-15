@@ -3,7 +3,6 @@ div.totalCard{
     height:80px;
     width:400px;
     background-color: #FFF;
-    border: 0.5px solid #888;
     border-radius: 30px;
     padding:0 30px;
     box-shadow: var(--shadow);
