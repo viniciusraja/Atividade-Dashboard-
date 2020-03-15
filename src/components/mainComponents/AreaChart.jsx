@@ -5,38 +5,50 @@ import {Chart} from '../../../node_modules/primereact/chart';
 
 export default class AreaChart extends Component {
 
+    constructor(props) {
+        super(props);
+        this.state = { 
+            Laptops:[100,200,350,100,390,820,680,1160,570,180,860,440],
+            Headsets:[200,350,640,750,260,70,50,380,590,800,460,640],
+            Monitors:[120,220,130,420,100,630,240,120,680,290,570,150],
+            Phones:[10,20,30,40,50,560,40,20,80,90,70,50],
+     };
+     }
+
     render() {
 
 
        
         const lineStylesData = {
-            labels: ['Janeiro','Fevereiro','Março','Abril', 'Maio', 'Junho','Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'],
+            labels: ['January','February','March','April', 'May', 'June','July', 'August', 'September', 'Octuber', 'November', 'December'],
             datasets: [
                 {   
                     label:'Laptops',
-                    data: [10, 30, 5, 40, 50, 20,60,20,40,50,60,50],
-                    fill: true,
-                    borderColor: '#42A5F5',
-                    borderRadius:'10px'
+                    data: this.state.Laptops,
+                    fill: false,
+                    borderColor: '#3bddf6',
+                    borderRadius:'10px',
+                    
+
                 },
                 {
                     label:'Headsets',
-                    data: [18, 28, 8, 58, 80, 60, 30, 53,5,45,7,50],
-                    fill: true,
-                    borderDash: [5, 5],
-                    borderColor: '#66BB6A'
+                    data: this.state.Headsets,
+                    fill:false,
+                    
+                    borderColor: '#38a1b1',
                 },
                 {
                     label:'Monitors',
-                    data: [12, 51, 82, 63, 70, 45, 60,30,50,15,48,11],
-                    fill: true,
-                    borderColor: '#FFA726',
+                    data: this.state.Monitors,
+                    fill:false,
+                    borderColor: '#88d4bc',
                 },
                 {
                     label:'Phones',
-                    data: [5, 60, 30, 10, 50, 10, 35, 20,58,20,78,42],
-                    fill: true,
-                    borderColor: '#FFA726',
+                    data: this.state.Phones,
+                    fill:false,
+                    borderColor: '#88f3e5',
                 }
             ]
         };
@@ -76,7 +88,7 @@ export default class AreaChart extends Component {
                 </div>
 
                 <div className="content-section implementation">
-                    <Chart type="line" data={lineStylesData} options={chartOptions} style={{width:'1058px'}}/>
+                    <Chart type="line" data={lineStylesData} options={chartOptions} style={{width:'868px'}}/>
                 </div>
             </div>
         )

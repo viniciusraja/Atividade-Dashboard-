@@ -6,7 +6,7 @@ aside.menu-area {
 }
 
 nav.menu {
-  height: 700px;
+  height: 500px;
   width:var(--aside-width)
   
 }
@@ -16,16 +16,16 @@ nav.menu a {
   position:relative;
 
   text-decoration: none;
-  color: #999;
+  color: var(--icon-color);
 }
 
 nav a:hover {
   display: block;
   text-decoration: none;
-  color: #6633fa;
+  color: var(--icon-color-hover);
 }
 nav a:active {
-  color: #eebb2c;
+  color: var(--icon-color-active);
 }
 nav div.navButton {
   background-color: #fff;

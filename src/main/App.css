@@ -1,12 +1,13 @@
 :root {
  --bg-light:#FFF;
- --logo-height:90px;
  --header-height:65px;
- --aside-width:80px;
+ --aside-width:70px;
  --footer-height:35px;
  --font-size-title:1.15em;
  --font-size-subtitle:0.8em;
-
+ --icon-color:#999;
+ --icon-color-hover:#38a1b1;
+ --icon-color-active:#2e7186;
  --shadow:
       5px 10px 20px #b0b0b0,
       inset -3px 3px 20px #c0c0c0

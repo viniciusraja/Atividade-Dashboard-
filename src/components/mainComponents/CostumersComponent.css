@@ -11,9 +11,14 @@ div.buttons{
     user-select:none;
     
 }
+div.buttonItem.buttonDetails{
+    background-color: #f6f6f6; 
+    box-shadow:  inset 2px -2px 4px #b0b0b0, inset -3px 3px 5px #ffffff;
+}
 div.buttonItem{
     display:flex;
-    height:25px;
+    position:relative;
+    height:40px;
     width:90px;
     background-color:#fff;
     border-radius: 10px;
@@ -74,56 +79,52 @@ div.settingsButton:active{
     box-shadow: inset 1px 1px 2px #b0b0b0, inset -1px -1px 2px #ffffff;
 }
 
-.MuiTableCell-root.MuiTableCell-body.firstCell{
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border: 3 solid #b0b0b0;
-}
-.MuiTableCell-root.MuiTableCell-body.lastCell{
-    border-top-right-radius: 30px;
-    border-bottom-right-radius: 30px;
-}
 
 
-.MuiTableRow-root.evenRow{
+.MuiTableRow-root.evenRow >div {
+    justify-content: center;
+    align-items: center;
     border-radius:30px;
     background-color:#F9F9F9;
     padding:0;
     box-shadow: 3px 3px 7px #b0b0b0, 3px -3px 6px #ffffff;
     box-shadow: inset -3px 3px 5px #b0b0b0, 3px -3px 6px #ffffff;
 }
-.MuiTableRow-root.evenRow:hover{
+.MuiTableRow-root.evenRow >div:hover{
+    
     cursor:pointer;
-    background: rgb(225,105,106);
-    background: linear-gradient(90deg, rgba(225,105,106,1) 0%, rgba(238,187,44,1) 31%, rgba(225,105,106,1) 100%);
-    box-shadow: 1px 1px 7px  rgba(225,105,106,1), 1px -1px 6px rgba(225,105,106,1);
+    background: rgb(136,243,229);
+background: -moz-linear-gradient(90deg, rgba(136,243,229,1) 0%, rgba(56,161,177,1) 86%);
+background: -webkit-linear-gradient(90deg, rgba(136,243,229,1) 0%, rgba(56,161,177,1) 86%);
+background: linear-gradient(90deg, rgba(136,243,229,1) 0%, rgba(56,161,177,1) 86%);
+box-shadow: 1px 1px 7px rgba(56,161,177,1) , 1px -1px 6px rgba(136,243,229,1);
 }
 
 
-.MuiTableRow-root.oddRow{
+.MuiTableRow-root.oddRow >div{
+    
     box-shadow: inset -3px 3px 4px #b0b0b0, inset 3px -2px 4px #ffffff;
     border-radius:30px;
     padding:0;
     background-color: #d8d8d8
     
 }
-.MuiTableRow-root.oddRow:hover{
-    background-color: rgb(238, 132, 45);
-    background: linear-gradient(90deg, rgba(238,187,44,1) 1%, rgba(225,105,106,1) 31%, rgba(238,187,44,1) 100%);
-    box-shadow: 1px 1px 7px rgba(238,187,44,1) , 1px -1px 6px rgba(238,187,44,1) ;
+.MuiTableRow-root.oddRow >div:hover{
+    
+    background: rgb(56,161,177);
+    background: -moz-linear-gradient(90deg, rgba(56,161,177,1) 18%, rgba(136,243,229,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(56,161,177,1) 18%, rgba(136,243,229,1) 100%);
+    background: linear-gradient(90deg, rgba(56,161,177,1) 18%, rgba(136,243,229,1) 100%);
+    box-shadow: 1px 1px 7px rgba(56,161,177,1) , 1px -1px 6px rgba(136,243,229,1);
     cursor:pointer
 }
 
 
 @media(max-width:768px){
-    .MuiTableCell-root.MuiTableCell-body.location{
-        display:none;
-
-    } 
-    .MuiTableCell-root.MuiTableCell-body.joinDate{
-        display:none;
-    } 
+    
     .detailsContainer{
-        width:200px;
+        width:340px;
     }
+ 
+    
 }

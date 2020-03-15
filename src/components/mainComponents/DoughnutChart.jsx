@@ -31,21 +31,21 @@ export default class DoughnutChart extends Component {
             labels: ['Electronics','Furniture','Toys'],
             datasets: [
                 {
-                    data: [300, 50, 100],
+                    data: [120, 120, 120],
                     backgroundColor: [
-                        "#FF6384",
-                        "#36A2EB",
-                        "#FFCE56"
+                        "#38a1b1",
+                        "#88f3e5",
+                        "#88D4BC"
                     ],
                     hoverBackgroundColor: [
-                        "#FF6384",
-                        "#36A2EB",
-                        "#FFCE56"
+                        "#168090",
+                        "#66c1c3",
+                        "#66b29a"
                     ],
                     borderWidth:10,
                     borderColor:"#FFF",
                     hoverBorderColor:"#FFF",
-                    
+                     
 
                 }]
             };
