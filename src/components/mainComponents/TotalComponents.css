@@ -8,9 +8,9 @@ div.totalCard{
     padding:0 30px;
     box-shadow: var(--shadow);
     cursor:pointer;
-
-   
+    transition: box-shadow 0.6s ease-in-out
 }
+
 h1.totalTitle{
     width:150px;
     font-size: var(--font-size-title);
@@ -29,5 +29,27 @@ div.totalIcon{
     align-items: center;
     font-size:35px;
     color:var(--icon-color-hover)
+
+}
+.totalCard h1{
+   
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out
+}
+.totalCard:hover h1{
+    font-size: 1.2em;
+    color:var(--icon-color-hover)
+}
+.totalCard p{
+   
+    transition: color 0.3s ease-in-out, font-size 0.3s ease-in-out
+}
+.totalCard:hover p{
+    font-size: 0.9em;
+    color:var(--icon-color-hover);
+
+    
+}
+.totalCard:hover{
+    box-shadow:  2px 2px 3px #38a1b1,  -3px -3px 4px #ffffff;
 
 }

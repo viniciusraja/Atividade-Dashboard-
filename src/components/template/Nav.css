@@ -5,8 +5,8 @@ aside.menu-area {
   flex-direction: column;
 }
 
+
 nav.menu {
-  height: 500px;
   width:var(--aside-width)
   
 }
@@ -32,13 +32,27 @@ nav div.navButton {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60px;
-  width: 60px;
+  height: 50px;
+  width: 50px;
   margin-left: 10px;
   margin-top: 15px;
   border-radius: 40px;
   box-shadow:  2px 2px 3px #b0b0b0,  -3px -3px 4px #ffffff;
+  transition:width 0.4s ease-in-out;
 }
+nav div.navButton:hover {
+  height: 50px;
+  width: 120px;
+  box-shadow:  2px 2px 3px #38a1b1,  -3px -3px 4px #ffffff;
+}
+nav div.navButton span{
+  display:none;
+  margin-left:10px;
+}
+nav div.navButton:hover span{
+  display:block
+}
+
 nav div.navButton:active {
   box-shadow: inset 1px 1px 2px #b0b0b0, inset -1px -1px 2px #ffffff;
 
@@ -46,7 +60,7 @@ nav div.navButton:active {
 aside div.menuButton{
   border-right:1px solid #888;
 
-  width:var(--aside-width);
+  width:45px;
   height:var(--header-height);
   border-bottom-right-radius: 30px;
   border-top-right-radius: 30px;
@@ -65,8 +79,9 @@ aside div.menuButton.active{
 div.backgroundNav{
   display: block;
   position: absolute;
-  width:50px;
-  height:700px;
+  width:45px;
+  height:590px;
+  border-bottom-right-radius: 50px;
   border-right:1px solid #888;
   background-color: #FFF;
   box-shadow:  2px 2px 3px #b0b0b0,  -3px -3px 4px #ffffff;

@@ -9,8 +9,8 @@ import Footer from '../components/template/Footer'
 
 export default props=> 
   <div className="app">
-      <Nav/>
       <Header/>
       <Main/>
       <Footer/>
+      <Nav />
   </div>

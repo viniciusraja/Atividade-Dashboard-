@@ -10,13 +10,13 @@
  --icon-color-active:#2e7186;
  --shadow:
       5px 10px 20px #b0b0b0,
-      inset -3px 3px 20px #c0c0c0
+       -3px 3px 20px #c0c0c0
 
 }
 
 *{
     box-sizing: border-box;
-    font-family: 'monospace','Verdana', 'Tahoma', sans-serif ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
     margin:0;
     padding:0;
 }

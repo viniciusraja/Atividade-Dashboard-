@@ -56,64 +56,66 @@ export default class Nav extends React.Component {
         <div className="backgroundNav">
         </div>
        <nav className="menu flex-column justify-content-around ">
-        <a href="#/" className="menuItems">
+        <a href="#/1" className="menuItems">
         <div className="navButton">
             <MdSearch className="icon" size="23px"/>
+            <span>Search</span>
         </div>
         </a>
         
         <a href="#/" className="menuItems">
         <div className="navButton">
             <GiHouse className="icon" size="23px"/>
+            <span>Home</span>
         </div>
         </a>
         
         <a href="#/" className="menuItems">
         <div className="navButton">
             <AiFillProject className="icon" size="23px"/>
-
+            <span>Datasheet</span>
         </div>
         </a>
         
         <a href="#/" className="menuItems">
         <div className="navButton">
             <AiOutlineAreaChart className="icon" size="23px"/>
-
+            <span>Stats</span>
         </div>
         </a>
         
         <a href="#/" className="menuItems">
         <div className="navButton">
             <TiUpload className="icon" size="23px"/>
-
+            <span>Upload</span>
         </div>
         </a>
 
         <a href="#/" className="menuItems">
         <div className="navButton">
             <FaFileImage className="icon" size="23px"/>
-
+            <span>Images</span>
         </div>
         </a>
         
         <a href="#/" className="menuItems">
         <div className="navButton">
             <IoIosCalendar className="icon" size="23px"/>
-
+            <span>Schedule</span>
         </div>
         </a>
         
         <a href="#/" className="menuItems">
         <div className="navButton">
             <MdGroup className="icon" size="23px"/>
-
+            <span>User</span>
         </div>
         </a>
         
         <a href="#/" className="menuItems">
         <div className="navButton">
             <AiFillSetting className="icon" size="23px"/>
-
+            <span>Settings</span>
         </div>
         </a>
     

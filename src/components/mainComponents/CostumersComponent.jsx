@@ -25,9 +25,9 @@ class ExpandingRow extends React.Component {
             <div className="col-md-12 col-9 justify-content-around d-flex flex-row align-items-center">
 
             <TableCell style ={{width:"20%"}}  className="p-0 pl-4 border-bottom-0 justify-content-center d-flex align-items-center  justify-content-center align-items-center" ><div className=" font-weight-bold m-0 p-0 ">{row.name}</div></TableCell>
-            <TableCell style ={{width:"20%"}} className="p-0 m-0 border-bottom-0 joinDate justify-content-center d-md-flex d-none align-items-center"><div><p className="  m-0 ">{row.joinDate}</p><p className=" font-italic text-center m-0">Joined</p></div></TableCell>
-            <TableCell style ={{width:"20%"}} className="p-0 m-0 border-bottom-0 justify-content-center d-flex align-items-center"><div><p className="  m-0" >{row.phone}</p><p className=" font-italic text-center m-0">Phone-Number</p></div></TableCell>
-            <TableCell style ={{width:"20%"}} className="p-0 m-0 border-bottom-0 location justify-content-center d-md-flex d-none align-items-center"><div><p className="  m-0 ">{row.adress}</p><p className=" font-italic text-center m-0">Location</p></div></TableCell>
+            <TableCell style ={{width:"20%"}} className="p-0 m-0 border-bottom-0 joinDate justify-content-center d-md-flex d-none align-items-center"><div><p className="  m-0 ">{row.joinDate}</p><p className=" font-italic text-justify m-0">Joined</p></div></TableCell>
+            <TableCell style ={{width:"20%"}} className="p-0 m-0 border-bottom-0 justify-content-center d-flex align-items-center"><div><p className="  m-0" >{row.phone}</p><p className=" font-italic text-justify m-0">Phone-Number</p></div></TableCell>
+            <TableCell style ={{width:"20%"}} className="p-0 m-0 border-bottom-0 location justify-content-center d-md-flex d-none align-items-center"><div><p className="  m-0 ">{row.adress}</p><p className=" font-italic text-justify m-0">Location</p></div></TableCell>
             <TableCell style ={{width:"20%"}}  className=" p-0 m-0 border-bottom-0 justify-content-center d-flex align-items-center">
             <div className="buttons  d-flex mr-4  w-100">
               <div className="buttonItem buttonOptions">
@@ -45,7 +45,7 @@ class ExpandingRow extends React.Component {
           </TableRow>
           <Collapse className="detailsContainer"in={open} component="tr" style={{ display: "block"}}>
             
-                 <div className="dropDownDetails font-italic text-center mt-1" >The client {row.name} bought a/an {row.product} in the value of ${row.price} and payed {row.methodOfPay}</div>
+                 <div className="dropDownDetails font-italic text-justify mt-1" >The client {row.name} bought a/an {row.product} in the value of ${row.price} and payed {row.methodOfPay}</div>
             
           </Collapse>
         </>

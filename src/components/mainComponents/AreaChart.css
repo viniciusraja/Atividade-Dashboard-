@@ -1,7 +1,7 @@
 div.areaChartContainer{
     border: 1px solid #888;
     background-color: #FFF;
-    border-radius: 10px;
+    border-radius: 30px;
     width:870px;
     padding-top: 10px;
     box-shadow: var(--shadow);

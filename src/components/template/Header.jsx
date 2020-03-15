@@ -15,7 +15,7 @@ export default props =>
               <p className="text-muted">Account Settings</p> 
               </span>
               <div className="iconUser d-flex align-items-center justify-content-center ml-3">
-               <FaUserAlt size="17px" color="#DDD"/>
+               <FaUserAlt size="17px" color="#38a1b1"/>
               </div>
             </div>
     </header>        
