@@ -1,130 +1,141 @@
-div.costumersHeader{
-    
-    justify-content: space-between;
-    align-items: center;
-    font-size: var(--font-size-title);
+div.costumersHeader {
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--font-size-title);
 }
-div.buttons{
-    display:flex;
-    justify-content: space-evenly;
-    align-items: center;
-    user-select:none;
-    
+div.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  user-select: none;
 }
-div.buttonItem.buttonDetails{
-    background-color: #f6f6f6; 
-    box-shadow:  inset 2px -2px 4px #b0b0b0, inset -3px 3px 5px #ffffff;
+div.buttonItem.buttonDetails {
+  background-color: #f6f6f6;
+  box-shadow: inset 2px -2px 4px #b0b0b0, inset -3px 3px 5px #ffffff;
 }
-div.buttonItem{
-    display:flex;
-    position:relative;
-    height:40px;
-    width:90px;
-    background-color:#fff;
-    border-radius: 10px;
-    border: 0.5px solid #f8f8f8;
-    justify-content: center;
-    align-items: center;
-    user-select:none;
-    box-shadow:  2px 2px 4px #b0b0b0,  -3px -3px 10px #ffffff;
+div.buttonItem {
+  display: flex;
+  position: relative;
+  height: 40px;
+  width: 90px;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 0.5px solid #f8f8f8;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+  box-shadow: 2px 2px 4px #b0b0b0, -3px -3px 10px #ffffff;
 }
-div.buttonItem:active{
-    box-shadow: inset 1px 1px 2px #b0b0b0, inset -1px -1px 2px #ffffff;
+div.buttonItem:active {
+  box-shadow: inset 1px 1px 2px #b0b0b0, inset -1px -1px 2px #ffffff;
 }
 
-div.buttonItem h2{
-    font-size: var(--font-size-subtitle);
-    margin:0;
-    z-index: 10;
-    
+div.buttonItem h2 {
+  font-size: var(--font-size-subtitle);
+  margin: 0;
+  z-index: 10;
 }
 
-
-div.dropDownDetails{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 0 10px;
-    margin:4px;
-    height:"100%";
-    width:"100%";
-    background-color: #FFF;
-    border: 0.5px solid #DDD;
-    border-radius: 20px;
-    font-size: var(--font-size-subtitle);
-    box-shadow: inset 1px 1px 2px #b0b0b0, inset -1px -1px 2px #ffffff;
-    z-index:5;
+div.dropDownDetails {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 10px;
+  margin: 4px;
+  height: "100%";
+  width: "100%";
+  background-color: #fff;
+  border: 0.5px solid #ddd;
+  border-radius: 20px;
+  font-size: var(--font-size-subtitle);
+  box-shadow: inset 1px 1px 2px #b0b0b0, inset -1px -1px 2px #ffffff;
+  z-index: 5;
 }
 
-div.settingsButton{
-    background-color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 60px;
-    width: 60px;
-    margin-left: 10px;
-    margin-bottom: 15px;
-    border-radius: 40px;
-    box-shadow:  2px 2px 3px #b0b0b0,  -3px -3px 4px #ffffff;
-    color:var(--icon-color);
-    cursor:pointer;
+div.settingsButton {
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 60px;
+  width: 60px;
+  margin-left: 10px;
+  margin-bottom: 15px;
+  border-radius: 40px;
+  box-shadow: 2px 2px 3px #b0b0b0, -3px -3px 4px #ffffff;
+  color: var(--icon-color);
+  cursor: pointer;
 }
-div.settingsButton:hover{
-color: var(--icon-color-hover);
+div.settingsButton:hover {
+  color: var(--icon-color-hover);
 }
-div.settingsButton:active{
-    color:var(--icon-color-active);
-    box-shadow: inset 1px 1px 2px #b0b0b0, inset -1px -1px 2px #ffffff;
-}
-
-
-
-.MuiTableRow-root.evenRow >div {
-    justify-content: center;
-    align-items: center;
-    border-radius:30px;
-    background-color:#F9F9F9;
-    padding:0;
-    box-shadow: 3px 3px 7px #b0b0b0, 3px -3px 6px #ffffff;
-    box-shadow: inset -3px 3px 5px #b0b0b0, 3px -3px 6px #ffffff;
-}
-.MuiTableRow-root.evenRow >div:hover{
-    
-    cursor:pointer;
-    background: rgb(136,243,229);
-background: -moz-linear-gradient(90deg, rgba(136,243,229,1) 0%, rgba(56,161,177,1) 86%);
-background: -webkit-linear-gradient(90deg, rgba(136,243,229,1) 0%, rgba(56,161,177,1) 86%);
-background: linear-gradient(90deg, rgba(136,243,229,1) 0%, rgba(56,161,177,1) 86%);
-box-shadow: 1px 1px 7px rgba(56,161,177,1) , 1px -1px 6px rgba(136,243,229,1);
+div.settingsButton:active {
+  color: var(--icon-color-active);
+  box-shadow: inset 1px 1px 2px #b0b0b0, inset -1px -1px 2px #ffffff;
 }
 
-
-.MuiTableRow-root.oddRow >div{
-    
-    box-shadow: inset -3px 3px 4px #b0b0b0, inset 3px -2px 4px #ffffff;
-    border-radius:30px;
-    padding:0;
-    background-color: #d8d8d8
-    
+.MuiTableRow-root.evenRow > div {
+  justify-content: center;
+  align-items: center;
+  border-radius: 30px;
+  background-color: #f9f9f9;
+  padding: 0;
+  box-shadow: 3px 3px 7px #b0b0b0, 3px -3px 6px #ffffff;
+  box-shadow: inset -3px 3px 5px #b0b0b0, 3px -3px 6px #ffffff;
 }
-.MuiTableRow-root.oddRow >div:hover{
-    
-    background: rgb(56,161,177);
-    background: -moz-linear-gradient(90deg, rgba(56,161,177,1) 18%, rgba(136,243,229,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(56,161,177,1) 18%, rgba(136,243,229,1) 100%);
-    background: linear-gradient(90deg, rgba(56,161,177,1) 18%, rgba(136,243,229,1) 100%);
-    box-shadow: 1px 1px 7px rgba(56,161,177,1) , 1px -1px 6px rgba(136,243,229,1);
-    cursor:pointer
+.MuiTableRow-root.evenRow > div:hover {
+  cursor: pointer;
+  background: rgb(136, 243, 229);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(136, 243, 229, 1) 0%,
+    rgba(56, 161, 177, 1) 86%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(136, 243, 229, 1) 0%,
+    rgba(56, 161, 177, 1) 86%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(136, 243, 229, 1) 0%,
+    rgba(56, 161, 177, 1) 86%
+  );
+  box-shadow: 1px 1px 7px rgba(56, 161, 177, 1),
+    1px -1px 6px rgba(136, 243, 229, 1);
 }
 
+.MuiTableRow-root.oddRow > div {
+  box-shadow: inset -3px 3px 4px #b0b0b0, inset 3px -2px 4px #ffffff;
+  border-radius: 30px;
+  padding: 0;
+  background-color: #d8d8d8;
+}
+.MuiTableRow-root.oddRow > div:hover {
+  background: rgb(56, 161, 177);
+  background: -moz-linear-gradient(
+    90deg,
+    rgba(56, 161, 177, 1) 18%,
+    rgba(136, 243, 229, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    rgba(56, 161, 177, 1) 18%,
+    rgba(136, 243, 229, 1) 100%
+  );
+  background: linear-gradient(
+    90deg,
+    rgba(56, 161, 177, 1) 18%,
+    rgba(136, 243, 229, 1) 100%
+  );
+  box-shadow: 1px 1px 7px rgba(56, 161, 177, 1),
+    1px -1px 6px rgba(136, 243, 229, 1);
+  cursor: pointer;
+}
 
-@media(max-width:768px){
-  
-    .detailsContainer{
-        width:340px;
-    }
- 
-    
+@media (max-width: 768px) {
+  .detailsContainer {
+    width: 340px;
+  }
 }

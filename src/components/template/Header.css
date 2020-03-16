@@ -1,37 +1,32 @@
-header{
-    background-color: #FFF;
-    border-bottom: 0.5px solid #DDD;
-    align-items: center;
-    padding-right: 30px;
-    padding-left: var(--aside-width);
-    box-shadow:  2px 2px 3px #b0b0b0,  -3px -3px 4px #ffffff;
-
+header {
+  background-color: #fff;
+  border-bottom: 0.5px solid #ddd;
+  align-items: center;
+  padding-right: 30px;
+  padding-left: var(--aside-width);
+  box-shadow: 2px 2px 3px #b0b0b0, -3px -3px 4px #ffffff;
 }
-
-
-span{
-    margin:0;
-    padding:0;
+span {
+  margin: 0;
+  padding: 0;
 }
-
-span h4{
-    font-size:var(--font-size-title);
-    margin:0;
-    color:#666;
+span h4 {
+  font-size: var(--font-size-title);
+  margin: 0;
+  color: #666;
 }
-span p{
-    font-size:var(--font-size-subtitle);
-    margin:0;
-    color:#DDD;
+span p {
+  font-size: var(--font-size-subtitle);
+  margin: 0;
+  color: #ddd;
 }
-
-div.iconUser{
-    position: relative;
-    background-color: #FFF;
-    top:15px;
-    height:70px;
-    width:70px;
-    border: 1.5px solid #DDD;
-    border-radius: 40px;
-    box-shadow:  2px 2px 3px #b0b0b0,  -3px -3px 4px #ffffff
+div.iconUser {
+  position: relative;
+  background-color: #fff;
+  top: 15px;
+  height: 70px;
+  width: 70px;
+  border: 1.5px solid #ddd;
+  border-radius: 40px;
+  box-shadow: 2px 2px 3px #b0b0b0, -3px -3px 4px #ffffff;
 }

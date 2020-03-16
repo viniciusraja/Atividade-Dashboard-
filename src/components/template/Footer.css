@@ -1,18 +1,15 @@
-footer.footer{
-    display:flex;
-    align-items: center;
-    justify-content: flex-start;
-    padding:0 30px;
-    background-color: #FFF;
-    border-top: 0.5px solid #DDD;
+footer.footer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 30px;
+  background-color: #fff;
+  border-top: 0.5px solid #ddd;
 }
-
-footer .icon{
-    margin-right: 5px;
+footer .icon {
+  margin-right: 5px;
 }
-
-footer h6{
-    font-size:0.7em;
-    margin:0px;
-    
+footer h6 {
+  font-size: 0.7em;
+  margin: 0px;
 }

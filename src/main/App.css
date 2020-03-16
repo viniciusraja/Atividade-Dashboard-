@@ -1,71 +1,66 @@
 :root {
- --bg-light:#FFF;
- --header-height:65px;
- --aside-width:60px;
- --footer-height:35px;
- --font-size-title:1.15em;
- --font-size-subtitle:0.8em;
- --icon-color:#999;
- --icon-color-hover:#38a1b1;
- --icon-color-active:#2e7186;
- --shadow:
-      5px 5px 10px #b0b0b0,
-       -3px 3px 10px #c0c0c0
-
+  --bg-light: #fff;
+  --header-height: 65px;
+  --aside-width: 60px;
+  --footer-height: 35px;
+  --font-size-title: 1.15em;
+  --font-size-subtitle: 0.8em;
+  --icon-color: #999;
+  --icon-color-hover: #38a1b1;
+  --icon-color-active: #2e7186;
+  --shadow: 5px 5px 10px #b0b0b0, -3px 3px 10px #c0c0c0;
 }
 
-*{
-    box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
-    margin:0;
-    padding:0;
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.app{
-    overflow-x: hidden;
-    margin:0;
-    display: grid;
-    grid-template-columns: var(--aside-width) 1fr;
-    grid-template-rows: 
-        var(--header-height)
-        1fr
-        var(--footer-height);
-    grid-template-areas: 
-        "header header"
-        "menu content"
-        "footer footer";
-    height:"100%";
-    background: var(--bg-light)
-
+.app {
+  overflow-x: hidden;
+  margin: 0;
+  display: grid;
+  grid-template-columns: var(--aside-width) 1fr;
+  grid-template-rows:
+    var(--header-height)
+    1fr
+    var(--footer-height);
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+  height: "100%";
+  background: var(--bg-light);
 }
 
-header.header{
-    grid-area:header;
+header.header {
+  grid-area: header;
 }
 
-aside.menu{
-    grid-area:menu
+aside.menu {
+  grid-area: menu;
 }
 
-main.content{
-    grid-area: content;
+main.content {
+  grid-area: content;
 }
 
-footer.footer{
-    grid-area:footer;
+footer.footer {
+  grid-area: footer;
 }
 
-@media(max-width:576px){
-    .app{
-        grid-template-rows:
-            var(--header-height)
-            1fr
-            var(--footer-height);
-        grid-template-columns: 15px 1fr;
-        grid-template-areas: 
-            "menu content"
-            "content content"
-            "footer footer"
-        ;
-    }
+@media (max-width: 480px) {
+  .app {
+    grid-template-rows:
+      var(--header-height)
+      1fr
+      var(--footer-height);
+    grid-template-columns: 15px 1fr;
+    grid-template-areas:
+      "menu content"
+      "content content"
+      "footer footer";
+  }
 }

@@ -1,19 +1,17 @@
 aside.menu-area {
-  position:fixed;
-  top:0;
-  left:0;
+  position: fixed;
+  top: 0;
+  left: 0;
   flex-direction: column;
 }
 
-
 nav.menu {
-  width:var(--aside-width)
-  
+  width: var(--aside-width);
 }
 
 nav.menu a {
   display: block;
-  position:relative;
+  position: relative;
 
   text-decoration: none;
   color: var(--icon-color);
@@ -37,54 +35,54 @@ nav div.navButton {
   margin-left: 10px;
   margin-top: 15px;
   border-radius: 40px;
-  box-shadow:  2px 2px 3px #b0b0b0,  -3px -3px 4px #ffffff;
-  transition:width 0.4s ease-in-out;
+  box-shadow: 2px 2px 3px #b0b0b0, -3px -3px 4px #ffffff;
+  transition: width 0.4s ease-in-out;
 }
 nav div.navButton:hover {
   height: 50px;
   width: 120px;
-  box-shadow:  2px 2px 3px #38a1b1,  -3px -3px 4px #ffffff;
+  box-shadow: 2px 2px 3px #38a1b1, -3px -3px 4px #ffffff;
 }
-nav div.navButton span{
-  display:none;
-  margin-left:10px;
+nav div.navButton span {
+  display: none;
+  margin-left: 10px;
 }
-nav div.navButton:hover span{
-  display:block
+nav div.navButton:hover span {
+  display: block;
 }
 
 nav div.navButton:active {
   box-shadow: inset 1px 1px 2px #b0b0b0, inset -1px -1px 2px #ffffff;
-
 }
-aside div.menuButton{
-  border-right:1px solid #888;
-  background-color: #FFF;
-  width:45px;
-  height:var(--header-height);
+aside div.menuButton {
+  border-right: 1px solid #888;
+  background-color: #fff;
+  width: 45px;
+  height: var(--header-height);
   border-bottom-right-radius: 30px;
   border-top-right-radius: 30px;
-  box-shadow:  inset 2px 1px 3px #b0b0b0, 1px 2px 5px #b0b0b0;
-  
-  
+  box-shadow: inset 2px 1px 3px #b0b0b0, 1px 2px 5px #b0b0b0;
 }
-aside div.menuButton:hover{
-  cursor:pointer;
+aside div.menuButton:hover {
+  cursor: pointer;
 }
-aside div.menuButton.active{
+aside div.menuButton.active {
   box-shadow: inset 1px 1px 5px #888, inset -1px -1px 3px #ccc;
 }
 
-
-div.backgroundNav{
+div.backgroundNav {
   display: block;
   position: absolute;
-  width:45px;
-  height:590px;
+  width: 45px;
+  height: 590px;
   border-bottom-right-radius: 50px;
-  border-right:1px solid #888;
-  background-color: #FFF;
-  box-shadow:  2px 2px 3px #b0b0b0,  -3px -3px 4px #ffffff;
+  border-right: 1px solid #888;
+  background-color: #fff;
+  box-shadow: 2px 2px 3px #b0b0b0, -3px -3px 4px #ffffff;
+}
 
-  
+@media (max-width: 768px) {
+  aside.menu-area {
+    position: absolute;
+  }
 }
