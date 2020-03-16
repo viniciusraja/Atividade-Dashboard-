@@ -6,7 +6,7 @@ div.areaChartContainer {
   padding-top: 10px;
   box-shadow: var(--shadow);
   cursor: pointer;
-  transition: width 0.5s ease-in;
+  transition: width 0.1s ease-in;
 }
 
 div h4.areaChartTitle {
@@ -38,7 +38,7 @@ div.settingsButton:active {
   position: relative;
   width: 868px;
   margin: auto;
-  transition: width 0.5s ease-in;
+  transition: width 0.1s ease-in;
 }
 @media (max-width: 1024px) {
   .content-section.implementation {
