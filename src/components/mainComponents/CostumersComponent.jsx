@@ -20,7 +20,7 @@ class ExpandingRow extends React.Component {
     return (
       <>
         <TableRow className={row.id % 2 ? "oddRow " : "evenRow"} key={row.id}>
-          <div className="col-md-12 col-9 justify-content-around d-flex flex-row align-items-center">
+          <div className="col-12 justify-content-around d-flex flex-row align-items-center">
             <TableCell
               style={{ width: "20%" }}
               className="p-0 pl-4 border-bottom-0 justify-content-center d-flex align-items-center  justify-content-center align-items-center"
@@ -63,10 +63,17 @@ class ExpandingRow extends React.Component {
                   <h2>Options</h2>
                 </div>
                 <div
+                  style={
+                    open
+                      ? { backgroundColor: "#38a1b1" }
+                      : { backgroundColor: "#FFF" }
+                  }
                   className="buttonItem ml-3 buttonDetails"
                   onClick={() => this.setState(({ open }) => ({ open: !open }))}
                 >
-                  <h2>Details</h2>
+                  <h2 style={open ? { color: "#FFF" } : { color: "#000" }}>
+                    Details
+                  </h2>
                 </div>
               </div>
             </TableCell>
@@ -166,19 +173,21 @@ function SimpleTable(props) {
   const { classes } = props;
   return (
     <>
-      <div className="costumersHeader  row col-12">
-        RECENT COSTUMERS
-        <div className="settingsButton">
-          <AiOutlineSetting size={35} />
+      <div className="col-12 row lg-col justify-content-lg-between justify-content-center p-0 m-0">
+        <div className="costumersHeader  row col-12">
+          RECENT COSTUMERS
+          <div className="settingsButton">
+            <AiOutlineSetting size={35} />
+          </div>
         </div>
+        <Table className={classes.table}>
+          <TableBody>
+            {rows.map(row => (
+              <ExpandingRow row={row} />
+            ))}
+          </TableBody>
+        </Table>
       </div>
-      <Table className={classes.table}>
-        <TableBody>
-          {rows.map(row => (
-            <ExpandingRow row={row} />
-          ))}
-        </TableBody>
-      </Table>
     </>
   );
 }

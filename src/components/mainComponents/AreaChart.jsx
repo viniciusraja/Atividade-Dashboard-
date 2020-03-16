@@ -104,8 +104,7 @@ export default class AreaChart extends Component {
           <div className="feature-intro d-flex justify-content-between align-items-start">
             <h4 className="areaChartTitle mb-3">SALES PERFORMANCE</h4>
             <div
-              className="settingsButton"
-              onClick={this.handleClick.bind(this)}
+              className="settingsButton m-0 mr-3"
             >
               <AiOutlineSetting size={35} />
             </div>

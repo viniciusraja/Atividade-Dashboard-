@@ -15,19 +15,16 @@ div h4.areaChartTitle {
   padding-left: 20px;
 }
 div.settingsButton {
-  margin-right: 10px;
-  background-color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 45px;
-  width: 45px;
-  margin-left: 10px;
-  margin-bottom: 15px;
-  border-radius: 40px;
-  box-shadow: 2px 2px 3px #b0b0b0, -3px -3px 4px #ffffff;
-  color: var(--icon-color);
-  cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    border-radius: 40px;
+    background-color: #fff;
+    box-shadow: 2px 2px 3px #b0b0b0, -3px -3px 4px #ffffff;
+    color: var(--icon-color);
+    cursor: pointer;
 }
 div.settingsButton:hover {
   color: var(--icon-color-hover);

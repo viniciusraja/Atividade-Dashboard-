@@ -8,14 +8,8 @@ import { FiMonitor } from "react-icons/fi";
 export default class TotalComponents extends React.Component {
   render() {
     return (
-      <div className="totalComponent row col-12 justify-content-between m-0 mb-5 p-0">
-        <div
-          className={
-            this.openSales
-              ? "opened"
-              : "totalCard d-flex  justify-content-center mt-5 p-5 p-md-0"
-          }
-        >
+      <div className="totalComponent col-12 row lg-col justify-content-lg-between justify-content-center m-0 mb-5 p-0">
+        <div className="totalCard d-flex  justify-content-center mt-5 p-5 p-md-0">
           <div className="  d-flex col-md-8 p-0 col-12  align-items-center justify-content-between ">
             <span>
               <h1 className="totalTitle">TOTAL SALES</h1>
