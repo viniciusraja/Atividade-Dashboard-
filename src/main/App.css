@@ -57,10 +57,13 @@ footer.footer {
       var(--header-height)
       1fr
       var(--footer-height);
-    grid-template-columns: 1px 1fr;
+    grid-template-columns:5px 1fr;
     grid-template-areas:
-      "menu content"
+      "menu header"
       "content content"
-      "footer footer";
+      "footer content";
+  }
+  .content{
+      width:360px;
   }
 }

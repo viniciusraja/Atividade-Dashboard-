@@ -69,6 +69,8 @@ export default class AreaChart extends Component {
     };
     const chartOptions = {
       responsive: true,
+      responsiveAnimationDuration: 0.1,
+      maintainAspectRatio: true,
       hoverMode: "index",
       stacked: false,
       scales: {
@@ -99,25 +101,19 @@ export default class AreaChart extends Component {
     };
 
     return (
-      <div className="areaChartContainer d-none d-lg-block mb-5">
+      <div className="areaChartContainer  mb-5">
         <div className="content-section introduction">
           <div className="feature-intro d-flex justify-content-between align-items-start">
             <h4 className="areaChartTitle mb-3">SALES PERFORMANCE</h4>
-            <div
-              className="settingsButton m-0 mr-3"
-            >
+            <div className="settingsButton m-0 mr-3">
               <AiOutlineSetting size={35} />
             </div>
           </div>
         </div>
-
-        <div className="content-section implementation">
-          <Chart
-            type="line"
-            data={lineStylesData}
-            options={chartOptions}
-            style={{ width: "868px" }}
-          />
+        <div className="chartBox">
+          <div className="content-section implementation">
+            <Chart type="line" data={lineStylesData} options={chartOptions} />
+          </div>
         </div>
       </div>
     );

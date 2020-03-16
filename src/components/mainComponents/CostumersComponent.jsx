@@ -103,7 +103,7 @@ const styles = theme => ({
     overflowY: "auto"
   },
   table: {
-    minWidth: 450
+    minWidth: 355,
   }
 });
 
@@ -173,14 +173,14 @@ function SimpleTable(props) {
   const { classes } = props;
   return (
     <>
-      <div className="col-12 row lg-col justify-content-lg-between justify-content-center p-0 m-0">
-        <div className="costumersHeader  row col-12">
+      <div className="col-12 row-no-gutters lg-col justify-content-lg-between justify-content-center p-0 m-0">
+        <div className="costumersHeader m-0 p-0 row col-12">
           RECENT COSTUMERS
           <div className="settingsButton">
             <AiOutlineSetting size={35} />
           </div>
         </div>
-        <Table className={classes.table}>
+        <Table width="100%" className={classes.table}>
           <TableBody>
             {rows.map(row => (
               <ExpandingRow row={row} />

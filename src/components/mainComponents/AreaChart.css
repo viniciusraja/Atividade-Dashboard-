@@ -5,7 +5,8 @@ div.areaChartContainer {
   max-height: 509px;
   padding-top: 10px;
   box-shadow: var(--shadow);
-  cursor:pointer;
+  cursor: pointer;
+  transition: width 0.5s ease-in;
 }
 
 div h4.areaChartTitle {
@@ -15,16 +16,16 @@ div h4.areaChartTitle {
   padding-left: 20px;
 }
 div.settingsButton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 45px;
-    width: 45px;
-    border-radius: 40px;
-    background-color: #fff;
-    box-shadow: 2px 2px 3px #b0b0b0, -3px -3px 4px #ffffff;
-    color: var(--icon-color);
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 45px;
+  width: 45px;
+  border-radius: 40px;
+  background-color: #fff;
+  box-shadow: 2px 2px 3px #b0b0b0, -3px -3px 4px #ffffff;
+  color: var(--icon-color);
+  cursor: pointer;
 }
 div.settingsButton:hover {
   color: var(--icon-color-hover);
@@ -32,4 +33,34 @@ div.settingsButton:hover {
 div.settingsButton:active {
   color: var(--icon-color-active);
   box-shadow: inset 1px 1px 2px #b0b0b0, inset -1px -1px 2px #ffffff;
+}
+.content-section.implementation {
+  position: relative;
+  width: 868px;
+  margin: auto;
+  transition: width 0.5s ease-in;
+}
+@media (max-width: 1024px) {
+  .content-section.implementation {
+    width: 600px;
+  }
+  div.areaChartContainer {
+    width: 600px;
+  }
+}
+@media (max-width: 768px) {
+  .content-section.implementation {
+    width: 480px;
+  }
+  div.areaChartContainer {
+    width: 480px;
+  }
+}
+@media (max-width: 600px) {
+  .content-section.implementation {
+    width: 365px;
+  }
+  div.areaChartContainer {
+    width: 365px;
+  }
 }
